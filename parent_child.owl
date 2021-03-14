@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#isChildOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Child"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Parent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#isParentOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Parent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Child"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#age">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Daughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Daughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Father -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Father">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Parent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Mother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Mother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Parent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Son"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2a"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2b"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ravi</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Son"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2a"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2b"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rohan</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Daughter"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2a"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2b"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sita</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P1a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P1a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Mother"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2a"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anita</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P1b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P1b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Father"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2a"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">82</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raj</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Daughter"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Mother"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P1a"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P1b"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C1"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C2"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C3"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Babita</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#P2b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#Father"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C1"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C2"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/saurav/ontologies/2021/1/untitled-ontology-5#C3"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ram</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
